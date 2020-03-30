@@ -61,8 +61,8 @@ Expected OUTPUT for this sample:
 
  */
 
-function getMoviesFreshness(movie) {
-  movies = [
+function getMoviesFreshness() {
+ var movies = [
     {
       name: 'Crazy Rich Asians',
       rating: 93
@@ -80,16 +80,17 @@ function getMoviesFreshness(movie) {
       rating: 60
     }
   ]
-for (movie.label in movies)
- { if (movie.rating < 60) {return movie.map(movie.label="rotten")}
-    else if (movie.rating>=60 && movie.rating<=75){return movies.map (movie.label ="fresh") }else if (movies.rating>75){
-    return  movies.map(movie.label= "Certified fresh") }    
-    }return {name: movie.name, rating:movie.rating, label:movie.label}
-   
-  }
 
 
+return movies.map(movie =>
+ { if (movie.rating < 60) {movie.label="rotten"}
+    else if (movie.rating>=60 && movie.rating<=75){movie.label ="fresh"}
+    else if (movie.rating>75){
+    movie.label= "certified fresh"}    
+     return movie;  }
 
+  )
+}
 
 
 
