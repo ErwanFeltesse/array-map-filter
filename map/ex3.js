@@ -87,11 +87,12 @@ return movies.map(movie =>
     else if (movie.rating>=60 && movie.rating<=75){movie.label ="fresh"}
     else if (movie.rating>75){
     movie.label= "certified fresh"}    
-     return movie;  }
+     return movie;}
 
   )
 }
 
+//quête terminée!!!
 
 
 // DON'T TOUCH THIS!
