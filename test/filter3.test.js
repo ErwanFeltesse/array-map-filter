@@ -24,7 +24,7 @@ const products = [
   }
 ];
 
-xdescribe('filter - exercice 3', () => {
+describe('filter - exercice 3', () => {
 
   it('filterOnPrice (price <= 500)', () => {
     expect(filterOnPrice(products, 500))

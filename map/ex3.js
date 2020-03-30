@@ -61,8 +61,35 @@ Expected OUTPUT for this sample:
 
  */
 
-function getMoviesFreshness(movies) {
-}
+function getMoviesFreshness(movie) {
+  movies = [
+    {
+      name: 'Crazy Rich Asians',
+      rating: 93
+    },
+    {
+      name: 'Skyscraper',
+      rating: 46
+    },
+    {
+      name: 'Leave No Trace',
+      rating: 100
+    },
+    {
+      name: 'White Boy Rick',
+      rating: 60
+    }
+  ]
+for (movie.label in movies)
+ { if (movie.rating < 60) {return movie.map(movie.label="rotten")}
+    else if (movie.rating>=60 && movie.rating<=75){return movies.map (movie.label ="fresh") }else if (movies.rating>75){
+    return  movies.map(movie.label= "Certified fresh") }    
+    }return {name: movie.name, rating:movie.rating, label:movie.label}
+   
+  }
+
+
+
 
 
 

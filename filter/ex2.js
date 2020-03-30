@@ -26,6 +26,9 @@ Expected OUTPUT for this sample:
 */
 
 function keepStarks(names) {
+  namesArray = ["Bran Stark", "Cersei Lannister", "Sandor Clegane", "Arya Stark", "Yara Greyjoy", "Sansa Stark"]
+return namesArray.filter(names => names.includes("Stark"));
+
 }
 
 // DON'T TOUCH THIS!

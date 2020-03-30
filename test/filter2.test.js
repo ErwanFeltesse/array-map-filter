@@ -1,7 +1,7 @@
 const { expect } = require('chai');
 const keepStarks = require('../filter/ex2.js');
 
-xdescribe('filter - exercice 2', () => {
+describe('filter - exercice 2', () => {
 
   it('keepStarks', () => {
     expect(keepStarks([

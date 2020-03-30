@@ -9,12 +9,7 @@
   Then you only need to use this function with map.
 
 Sample INPUT array (strings) for getStringsLength:
-  [
-    'Chicken',
-    'Bacon',
-    'Tofu',
-    'Mayonnaise'
-  ]
+
 
 Expected OUTPUT for this sample array:
   [
@@ -24,10 +19,26 @@ Expected OUTPUT for this sample array:
     'Mayonnaise contains 10 characters'
   ]
 
+
+
 */
 
-function getStringsLength(strings) {
-}
+
+function getStringsLength(strings) { 
+ stringsArray= [
+    'Chicken',
+    'Bacon',
+    'Tofu',
+    'Mayonnaise'
+  ]
+ function line (str) {return `${str}`+" contains "+`${str.length}`+" characters"}
+
+  return stringsArray.map(line)
+  }
+ 
+console.log(getStringsLength)
+
+
 
 // If you need, you can always visualize the result with a console.log.
 // In that case, uncomment the line below (you can also add your own
